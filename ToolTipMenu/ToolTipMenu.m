@@ -15,9 +15,8 @@ RCT_EXPORT_MODULE()
     return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(show:(nonnull NSNumber *)reactTag
-                  items: (NSArray *)items
-                  arrowDirection: (NSString *)arrowDirection)
+RCT_EXPORT_METHOD(setItems:(nonnull NSNumber *)reactTag
+                  items: (NSArray *)items)
 {
     UIView *view = [self.bridge.uiManager viewForReactTag:reactTag];
     NSArray *buttons = items;
@@ -28,26 +27,9 @@ RCT_EXPORT_METHOD(show:(nonnull NSNumber *)reactTag
                               initWithTitle:buttonText
                               action:NSSelectorFromString(sel)]];
     }
-    [view becomeFirstResponder];
     UIMenuController *menuCont = [UIMenuController sharedMenuController];
-    [menuCont setTargetRect:view.frame inView:view.superview];
 
-    if([arrowDirection isEqualToString: @"up"]){
-      menuCont.arrowDirection = UIMenuControllerArrowUp;
-    }else if ([arrowDirection isEqualToString: @"right"]){
-      menuCont.arrowDirection = UIMenuControllerArrowRight;
-    }else if ([arrowDirection isEqualToString: @"left"]) {
-      menuCont.arrowDirection = UIMenuControllerArrowLeft;
-    } else {
-      menuCont.arrowDirection = UIMenuControllerArrowDown;
-    }
     menuCont.menuItems = menuItems;
-    [menuCont setMenuVisible:YES animated:YES];
-}
-
-RCT_EXPORT_METHOD(hide){   
-    UIMenuController *menuCont = [UIMenuController sharedMenuController];
-    [menuCont setMenuVisible:NO animated:NO];
 }
 
 @end
