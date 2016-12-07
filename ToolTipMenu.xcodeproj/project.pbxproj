@@ -12,6 +12,10 @@
 		4681C02D1B05271A004D67D4 /* libToolTipMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4681C0211B05271A004D67D4 /* libToolTipMenu.a */; };
 		469F58B71B069FF300C571E8 /* RCTToolTipText.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F58B61B069FF300C571E8 /* RCTToolTipText.m */; };
 		469F58B91B06A00C00C571E8 /* RCTToolTipTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F58B81B06A00C00C571E8 /* RCTToolTipTextManager.m */; };
+		CA4953D61DF84600001581BC /* NSObject+REObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEA66C91DF841BC00E4D5A4 /* NSObject+REObserver.m */; };
+		CA4953D71DF84600001581BC /* NSObject+REResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEA66CB1DF841BC00E4D5A4 /* NSObject+REResponder.m */; };
+		CA4953D81DF84600001581BC /* REUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEA66CE1DF841BC00E4D5A4 /* REUtil.m */; };
+		CAEA66DF1DF8447B00E4D5A4 /* libREKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEA66D61DF8442200E4D5A4 /* libREKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,6 +25,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4681C0201B05271A004D67D4;
 			remoteInfo = ToolTipMenu;
+		};
+		CA4953D41DF845F6001581BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4681C0191B05271A004D67D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAEA66D51DF8442200E4D5A4;
+			remoteInfo = REKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -32,6 +43,15 @@
 			dstSubfolderSpec = 16;
 			files = (
 				4681C0251B05271A004D67D4 /* ToolTipMenu.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAEA66D41DF8442200E4D5A4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +67,14 @@
 		469F58B61B069FF300C571E8 /* RCTToolTipText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTToolTipText.m; sourceTree = "<group>"; };
 		469F58B81B06A00C00C571E8 /* RCTToolTipTextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTToolTipTextManager.m; sourceTree = "<group>"; };
 		469F58BA1B06A01D00C571E8 /* RCTToolTipTextManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTToolTipTextManager.h; sourceTree = "<group>"; };
+		CAEA66C81DF841BC00E4D5A4 /* NSObject+REObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+REObserver.h"; path = "../ToolTipMenu/REKit/NSObject+REObserver.h"; sourceTree = "<group>"; };
+		CAEA66C91DF841BC00E4D5A4 /* NSObject+REObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+REObserver.m"; path = "../ToolTipMenu/REKit/NSObject+REObserver.m"; sourceTree = "<group>"; };
+		CAEA66CA1DF841BC00E4D5A4 /* NSObject+REResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+REResponder.h"; path = "../ToolTipMenu/REKit/NSObject+REResponder.h"; sourceTree = "<group>"; };
+		CAEA66CB1DF841BC00E4D5A4 /* NSObject+REResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+REResponder.m"; path = "../ToolTipMenu/REKit/NSObject+REResponder.m"; sourceTree = "<group>"; };
+		CAEA66CC1DF841BC00E4D5A4 /* REKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = REKit.h; path = ../ToolTipMenu/REKit/REKit.h; sourceTree = "<group>"; };
+		CAEA66CD1DF841BC00E4D5A4 /* REUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = REUtil.h; path = ../ToolTipMenu/REKit/REUtil.h; sourceTree = "<group>"; };
+		CAEA66CE1DF841BC00E4D5A4 /* REUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = REUtil.m; path = ../ToolTipMenu/REKit/REUtil.m; sourceTree = "<group>"; };
+		CAEA66D61DF8442200E4D5A4 /* libREKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEA66DF1DF8447B00E4D5A4 /* libREKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +94,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAEA66D31DF8442200E4D5A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +109,7 @@
 			children = (
 				4681C0231B05271A004D67D4 /* ToolTipMenu */,
 				4681C0301B05271A004D67D4 /* ToolTipMenuTests */,
+				CAEA66D71DF8442200E4D5A4 /* REKit */,
 				4681C0221B05271A004D67D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +119,7 @@
 			children = (
 				4681C0211B05271A004D67D4 /* libToolTipMenu.a */,
 				4681C02C1B05271A004D67D4 /* ToolTipMenuTests.xctest */,
+				CAEA66D61DF8442200E4D5A4 /* libREKit.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +127,7 @@
 		4681C0231B05271A004D67D4 /* ToolTipMenu */ = {
 			isa = PBXGroup;
 			children = (
+				CAEA66C71DF841BC00E4D5A4 /* REKit */,
 				4681C0241B05271A004D67D4 /* ToolTipMenu.h */,
 				4681C0261B05271A004D67D4 /* ToolTipMenu.m */,
 				469F58B31B069F9800C571E8 /* RCTToolTipText.h */,
@@ -115,6 +154,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CAEA66C71DF841BC00E4D5A4 /* REKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = REKit;
+			sourceTree = "<group>";
+		};
+		CAEA66D71DF8442200E4D5A4 /* REKit */ = {
+			isa = PBXGroup;
+			children = (
+				CAEA66C81DF841BC00E4D5A4 /* NSObject+REObserver.h */,
+				CAEA66C91DF841BC00E4D5A4 /* NSObject+REObserver.m */,
+				CAEA66CA1DF841BC00E4D5A4 /* NSObject+REResponder.h */,
+				CAEA66CB1DF841BC00E4D5A4 /* NSObject+REResponder.m */,
+				CAEA66CC1DF841BC00E4D5A4 /* REKit.h */,
+				CAEA66CD1DF841BC00E4D5A4 /* REUtil.h */,
+				CAEA66CE1DF841BC00E4D5A4 /* REUtil.m */,
+			);
+			path = REKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +189,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CA4953D51DF845F6001581BC /* PBXTargetDependency */,
 			);
 			name = ToolTipMenu;
 			productName = ToolTipMenu;
@@ -153,6 +214,23 @@
 			productReference = 4681C02C1B05271A004D67D4 /* ToolTipMenuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CAEA66D51DF8442200E4D5A4 /* REKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAEA66DE1DF8442200E4D5A4 /* Build configuration list for PBXNativeTarget "REKit" */;
+			buildPhases = (
+				CAEA66D21DF8442200E4D5A4 /* Sources */,
+				CAEA66D31DF8442200E4D5A4 /* Frameworks */,
+				CAEA66D41DF8442200E4D5A4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = REKit;
+			productName = REKit;
+			productReference = CAEA66D61DF8442200E4D5A4 /* libREKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +245,10 @@
 					};
 					4681C02B1B05271A004D67D4 = {
 						CreatedOnToolsVersion = 6.3.1;
+					};
+					CAEA66D51DF8442200E4D5A4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -184,6 +266,7 @@
 			targets = (
 				4681C0201B05271A004D67D4 /* ToolTipMenu */,
 				4681C02B1B05271A004D67D4 /* ToolTipMenuTests */,
+				CAEA66D51DF8442200E4D5A4 /* REKit */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +299,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAEA66D21DF8442200E4D5A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4953D61DF84600001581BC /* NSObject+REObserver.m in Sources */,
+				CA4953D71DF84600001581BC /* NSObject+REResponder.m in Sources */,
+				CA4953D81DF84600001581BC /* REUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -223,6 +316,11 @@
 			isa = PBXTargetDependency;
 			target = 4681C0201B05271A004D67D4 /* ToolTipMenu */;
 			targetProxy = 4681C02E1B05271A004D67D4 /* PBXContainerItemProxy */;
+		};
+		CA4953D51DF845F6001581BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAEA66D51DF8442200E4D5A4 /* REKit */;
+			targetProxy = CA4953D41DF845F6001581BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -309,6 +407,7 @@
 		4681C0361B05271A004D67D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -324,6 +423,7 @@
 		4681C0371B05271A004D67D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -370,6 +470,39 @@
 			};
 			name = Release;
 		};
+		CAEA66DC1DF8442200E4D5A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CAEA66DD1DF8442200E4D5A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -396,6 +529,15 @@
 			buildConfigurations = (
 				4681C0391B05271A004D67D4 /* Debug */,
 				4681C03A1B05271A004D67D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAEA66DE1DF8442200E4D5A4 /* Build configuration list for PBXNativeTarget "REKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAEA66DC1DF8442200E4D5A4 /* Debug */,
+				CAEA66DD1DF8442200E4D5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
